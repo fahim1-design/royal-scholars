@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ROYAL SCHOLARS REMEDIAL AND VACATION CLASSES</title>
+<style>
+body{width:100%;
+     height:100vh;
+     margin:0;
+     background:linear-gradient(90deg,red,blue,yellow);
+     font-family:Tahoma;
+     font-size:16px; max-width:800px;}
+     
+     h1,p{text-align:center; color:white}
+
+     p{font-style:italic;}
+
+     .survey-form{width:80%;
+                  margin:0 auto;
+                  background-color:rgba(34, 34, 209,20%);}
+
+form{padding-left:20px; padding:20px;}
+    label{display:block; margin:0.5rem 0;}
+    input,select{display:block; width:80%; height:30px; background-color:blue; color:yellow}
+
+    input[type="radio"],input[type="checkbox"]{display:inline; width:unset; height:unset;}
+
+    input[type="submit"]{width:80%; height:30px; margin-left:auto; margin-right:auto; background-color:yellow; color:blue; font-size:20px;}
+    fieldset{border:none; margin:5px 0;}
+    textarea{display:block; width:80%;}
+
+</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    
+   <h1 id="title">LAST STOP REMEDIAL AND VACATION CLASSES</h1>
+   <p id="description">Please fill this form to let us know your recommendations</p>
+
+   <div class="survey-form">
+
+  <form action="https://www.freecodecamp.org" method="post" id="survey-form">
+   <fieldset>
+
+    <label for="name" id="name-label">Full name: <input type="text" id="name" name="full name" required placeholder="enter your full name">
+    </label>
+
+    <label for="email" id="email-label">Email: <input type="email" id="email" name="email" required placeholder="enter your email"></label>
+
+    <label for="number" id="number-label">Age: <input type="number" id="number" name="age" min="13" max="17" required placeholder="enter your age"> </label>
+
+    <label for="dropdown">Select your department: 
+      <select id="dropdown" name="department" required>
+        <option value="">Select your department</option>
+        <option value="1">General Science</option>
+        <option value="2">General Arts</option>
+        <option value="3">Home Economics</option>
+        <option value="4">Business</option>
+        </select>
+    </label>
+
+   </fieldset>
+   <fieldset class="inline">
+<legend>Would you like recommend this classes to other students:</legend>
+<label for="no"> <input type="radio" id="no" name="yes-no" value="No" > No</label>
+    <label for="yes"><input type="radio" id="yes" name="yes-no" value="Yes" >Yes</label>
+    <label for="never"><input type="radio" name="yes-no" id="never" value="No">Never</label>
+   </fieldset>
+   <fieldset>
+     <legend>Which of the core subjects did you enjoy learning(required):</legend>
+<label><input type="checkbox" id="core maths" name="core maths" value="Core maths" checked > Core Mathematics</label>
+<label for="inter. Science"><input type="checkbox" id="inter. Science" name="inter. Science" value="Science" checked>Integrated Science</label>
+<label for="English"><input type="checkbox" id="English" name="English" value="English" checked> English Language</label>
+<label for="Social studies"><input type="checkbox" name="Social studies" id="Social studies" value="Social" checked> Social Studies</label>
+<label></label>
+
+   </fieldset>
+   <fieldset>
+   <legend>Which other department do you think should be added</legend>
+   <select id="other department" name="other department">
+   <option value="">Select other department of your choice</option>
+   <option value="1">Visual Arts</option>
+   <option value="2">Agriculture</option>
+   <option value="3">Computer Programming</option>
+</select>
+ </fieldset>
+ <fieldset>
+   <label for="recom">Tell us your personal recommendatios: <textarea id="recom" name="recom" cols="30" rows="4" placeholder="I think you should..."></textarea></label>
+ </fieldset>
+ <label><input type="submit" id="submit" value="Submit"></label>
+</form>
+ 
+    </div>
+  </body>
+
+    
+</html>
